@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse all free AI tool guides — image generators, chatbots, art tools, AI APIs, detection tools, and open source AI. Filter by category or search 12 expert articles.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="keywords" content="free ai tools blog, ai tools articles, free ai image generator guide, best free ai tools list">
+  <meta property="og:title" content="Blog — Free AI Tools Guides & Reviews | Top AI Tools">
+  <meta property="og:description" content="Browse expert guides on free AI tools. Filter by category or search across 12 in-depth articles.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://topaitools.com/blog.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Blog — Top AI Tools">
+  <link rel="canonical" href="https://topaitools.com/blog.html">
+  <title>Blog — Free AI Tools Guides & Reviews | Top AI Tools</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans, Outfit, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="blog">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Top AI Tools Home">
+        <span class="logo-icon" aria-hidden="true">⚡</span>
+        Top AI Tools
+      </a>
+      
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">🌙</button>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="padding: 3.5rem 0 2rem">
+      <div class="container">
+        <h1>All Free AI Guides & Reviews</h1>
+        <p style="margin-bottom:1.75rem">Expert guides on free AI tools, categorized by workflow and search demand.</p>
+        
+        <div class="hero-search-wrapper">
+          <form class="hero-search" role="search" onsubmit="return false">
+            <span class="search-icon-left" aria-hidden="true">🔍</span>
+            <input type="search" id="blog-search" placeholder="Type to filter articles or keywords in real-time..." aria-label="Search articles">
+            <span class="search-shortcut-badge" title="Press / to focus">/</span>
+            <button type="submit" class="btn btn-primary btn-sm">Search</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" style="padding-top:0" aria-label="Blog articles">
+      <div class="blog-controls-wrapper">
+        <div class="filters" id="filters" role="group" aria-label="Filter by category"></div>
+        
+        <div class="blog-meta-bar">
+          <div id="results-count" style="font-weight:600">Showing 35 articles</div>
+          
+          <div class="sort-wrapper">
+            <label for="sort-select">Sort by:</label>
+            <select id="sort-select" class="sort-select" aria-label="Sort articles">
+              <option value="searches">🔥 Most Popular Searches</option>
+              <option value="title">🔤 Alphabetical (A to Z)</option>
+              <option value="readtime">⏱️ Quickest Read</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="post-grid" id="all-posts"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" style="color:white;margin-bottom:0.75rem">
+            <span class="logo-icon" aria-hidden="true">⚡</span>
+            Top AI Tools
+          </a>
+          <p>Your trusted, independent source for verified free AI tool reviews, comparisons, and technical guides.</p>
+          <div class="footer-status-pill">
+            <span class="pulse-dot" style="width:6px;height:6px"></span>
+            2026 Free Database Active
+          </div>
+        </div>
+        <div>
+          <h4>Popular Categories</h4>
+          <ul>
+            <li><a href="blog.html?category=Image%20Generators">Image Generators</a></li>
+            <li><a href="blog.html?category=Chat%20AI">Chat AI & LLMs</a></li>
+            <li><a href="blog.html?category=Open%20Source">Open Source AI</a></li>
+            <li><a href="blog.html?category=Art%20Generators">Art & Drawing</a></li>
+            <li><a href="blog.html?category=AI%20APIs">Free AI APIs</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal & Trust</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Top AI Tools Blog. All rights reserved.</p>
+        <div>
+          <a href="privacy.html" style="margin-right:1rem">Privacy Policy</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/posts.js"></script>
+  <script src="js/seo.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
